@@ -1,0 +1,4590 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>880</width>
+    <height>570</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: #badbfc;</string>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>880</width>
+      <height>469</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="currentIndex">
+     <number>7</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="mainLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>90</y>
+        <width>411</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 75 18pt &quot;微软雅黑&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="scanButton">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>200</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>开始体检</string>
+      </property>
+      <property name="icon">
+       <iconset resource="button.qrc">
+        <normaloff>:/button/zoom.png</normaloff>:/button/zoom.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>33</width>
+        <height>33</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="RingsMapProgressbar" name="ringsBar">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>80</y>
+        <width>201</width>
+        <height>211</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mainLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>322</x>
+        <y>138</y>
+        <width>311</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(154, 153, 153);
+font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="imageLabel">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>90</y>
+        <width>180</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="button.qrc">:/button/network_1.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="mainLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>322</x>
+        <y>160</y>
+        <width>311</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(154, 153, 153);
+font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>220</y>
+        <width>80</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>login</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="buttonLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>131</width>
+        <height>469</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(191, 212, 232);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sysButton_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>系统补丁扫描</string>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sysButton_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>已安装程序</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sysButton_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>硬件信息</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sysButton_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>共享目录</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="sysButton_5">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>170</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>系统配置</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="sysStackedWidget">
+      <property name="geometry">
+       <rect>
+        <x>131</x>
+        <y>20</y>
+        <width>741</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="page_7">
+       <widget class="QLabel" name="budingLabel_1">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>20</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>对本机进行系统补丁扫描</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="budingButton">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>260</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>一键扫描</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>257</x>
+          <y>90</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/earthscan.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="budingCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>26</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查看结果</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>25</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <zorder>budingButton</zorder>
+       <zorder>budingLabel_1</zorder>
+       <zorder>label_3</zorder>
+       <zorder>budingCheckButton</zorder>
+       <zorder>label_4</zorder>
+      </widget>
+      <widget class="QWidget" name="page_8">
+       <widget class="RingsMapProgressbar" name="budingRings">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>201</width>
+          <height>201</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sysLabel_1">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>0</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>正在扫描补丁...</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="budingBackButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>6</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="budingTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>61</y>
+          <width>731</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>补丁号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>补丁描述</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>安装时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>发布时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>严重等级</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_12">
+       <widget class="QPushButton" name="baojingCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>26</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查看结果</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_5">
+        <property name="geometry">
+         <rect>
+          <x>257</x>
+          <y>90</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/earthscan.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="baojingLabel">
+        <property name="geometry">
+         <rect>
+          <x>225</x>
+          <y>20</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>检查本机已安装程序</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_6">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>25</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="baojingButton">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>260</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>一键检查</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_9">
+       <widget class="RingsMapProgressbar" name="baojingRings">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>211</width>
+          <height>201</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="baojingBackButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>6</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sysLabel_2">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>0</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>正在检查安装程序...</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="chengxuTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>61</y>
+          <width>731</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>名称</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>类型</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>版本</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>安装时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>安装目录</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_10">
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>25</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="yingjianLabel">
+        <property name="geometry">
+         <rect>
+          <x>195</x>
+          <y>20</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>对本机进行系统硬件信息检查</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="yingjianButton">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>260</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>一键检查</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="yingjianCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>26</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查看结果</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>257</x>
+          <y>90</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/earthscan.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_11">
+       <widget class="RingsMapProgressbar" name="yingjianRings">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>201</width>
+          <height>201</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="yingjianBackButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>6</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sysLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>0</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>正在检查硬件信息...</string>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>15</x>
+          <y>61</y>
+          <width>721</width>
+          <height>331</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1000</width>
+           <height>1100</height>
+          </rect>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>1000</width>
+           <height>1100</height>
+          </size>
+         </property>
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>10</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>CPU</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="yingjianTableWidget_1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>35</y>
+            <width>980</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>序列号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>型号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>主频</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>CPU数</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>核数</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QLabel" name="label_21">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>160</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>硬盘</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="yingjianTableWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>185</y>
+            <width>980</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>序列号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>大小</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>型号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QLabel" name="label_32">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>310</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>主板</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="yingjianTableWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>340</y>
+            <width>980</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>序列号</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>型号</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QLabel" name="label_43">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>465</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>内存</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="yingjianTableWidget_4">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>490</y>
+            <width>980</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>总物理内存</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>可用物理内存</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>总虚拟内存</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>可用虚拟内存</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QLabel" name="label_44">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>615</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>显卡</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="yingjianTableWidget_5">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>640</y>
+            <width>980</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>驱动提供商</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>显存大小</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QLabel" name="label_45">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>765</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>声卡</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="yingjianTableWidget_6">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>790</y>
+            <width>980</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>驱动提供商</string>
+           </property>
+          </column>
+         </widget>
+         <widget class="QLabel" name="label_46">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>915</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+          </property>
+          <property name="text">
+           <string>网卡</string>
+          </property>
+         </widget>
+         <widget class="QTableWidget" name="yingjianTableWidget_7">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>940</y>
+            <width>980</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <column>
+           <property name="text">
+            <string>驱动提供商</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>描述</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_13">
+       <widget class="QLabel" name="label_13">
+        <property name="geometry">
+         <rect>
+          <x>257</x>
+          <y>90</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/earthscan.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="muluButton">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>260</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>一键检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="muluLabel">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>20</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>对本机进行共享目录检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_14">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>25</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="muluCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>26</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查看结果</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_14">
+       <widget class="RingsMapProgressbar" name="muluRings">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>0</y>
+          <width>201</width>
+          <height>201</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="muluBackButton">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>6</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sysLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>270</x>
+          <y>0</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>正在检查共享目录...</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="gongxiangTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>61</y>
+          <width>731</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>共享名</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>共享路径</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>描述</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>ADMIN$</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>C:\WINDOWS</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>远程管理</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>C$</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>C:\</string>
+         </property>
+        </item>
+        <item row="1" column="2">
+         <property name="text">
+          <string>默认共享</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_15">
+       <widget class="QLabel" name="label_15">
+        <property name="geometry">
+         <rect>
+          <x>257</x>
+          <y>90</y>
+          <width>150</width>
+          <height>150</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/earthscan.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="peizhiButton">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>260</y>
+          <width>161</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>一键检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="peizhiLabel">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>20</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>对本机进行系统配置信息检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>145</x>
+          <y>25</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="peizhiCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>530</x>
+          <y>26</y>
+          <width>80</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>查看结果</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_16">
+       <widget class="RingsMapProgressbar" name="peizhiRings">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>201</width>
+          <height>201</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="peizhiBackButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>16</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="sysLabel_5">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>10</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>正在检查系统配置...</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="peizhiTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>61</y>
+          <width>731</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>0</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>名称</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>安全设置</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>同步目录服务数据</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>作为受信任的呼叫方访问凭据管理器</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="buttonLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>131</width>
+        <height>469</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(191, 212, 232);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="wailianButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>违规外联检查</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="wjczButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>文件操作痕迹检查</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="wjnrButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>文件内容检查</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ydjzButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>130</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>移动介质使用检查</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="jxwjButton">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>170</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>镜像文件检查</string>
+      </property>
+     </widget>
+     <widget class="QStackedWidget" name="henjiWidget">
+      <property name="geometry">
+       <rect>
+        <x>131</x>
+        <y>20</y>
+        <width>741</width>
+        <height>421</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="page_17">
+       <widget class="QLabel" name="budingLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>15</y>
+          <width>351</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>对本机进行违规外联检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_34">
+        <property name="geometry">
+         <rect>
+          <x>265</x>
+          <y>95</y>
+          <width>131</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/search_globe.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_33">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>20</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="wlDeepCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>345</x>
+          <y>275</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>深度检查</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="wlMildCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>185</x>
+          <y>275</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>轻度检查</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_18">
+       <widget class="QLabel" name="label_17">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>14</y>
+          <width>181</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 16pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>正在进行检查...</string>
+        </property>
+       </widget>
+       <widget class="RingsMapProgressbar" name="henjiRings">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>14</y>
+          <width>201</width>
+          <height>201</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="hjBackButton">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>20</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="deepTaskStopButton">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>140</y>
+          <width>121</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>停止检查</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_19">
+       <widget class="QLabel" name="label_35">
+        <property name="geometry">
+         <rect>
+          <x>255</x>
+          <y>95</y>
+          <width>131</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/book_search.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="wjczMildCheckButton_2">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>275</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>轻度检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="budingLabel_4">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>15</y>
+          <width>421</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>检查文件操作痕迹，查看文件操作记录</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="wjczDeepCheckButton_2">
+        <property name="geometry">
+         <rect>
+          <x>335</x>
+          <y>275</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>深度检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>105</x>
+          <y>20</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_20">
+       <widget class="QPushButton" name="wjnrDeepCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>280</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>深度检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>20</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>255</x>
+          <y>70</y>
+          <width>131</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/search_page.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="wjnrMildCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>280</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>开始检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="budingLabel_5">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>15</y>
+          <width>391</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>对本机进行文件内容检查</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="wjnrLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>210</y>
+          <width>311</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="maxLength">
+         <number>32766</number>
+        </property>
+        <property name="placeholderText">
+         <string>请输入关键词，用分号隔开</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="wjmlLineEdit">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>240</y>
+          <width>311</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="placeholderText">
+         <string>请选择扫描目录，空为全盘扫描</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="chooseDirButton">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>238</y>
+          <width>81</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>选择目录</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_21">
+       <widget class="QPushButton" name="ydjzDeepCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>280</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>深度检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>145</x>
+          <y>25</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>100</y>
+          <width>131</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/search_computer.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ydjzMildCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>280</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>轻度检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="budingLabel_6">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>20</y>
+          <width>391</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>对本机进行移动介质使用检查</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_22">
+       <widget class="QPushButton" name="jxwjCheckButton">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>275</y>
+          <width>141</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>一键检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>260</x>
+          <y>95</y>
+          <width>131</width>
+          <height>131</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/zip_file_search.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="budingLabel_7">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>15</y>
+          <width>391</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 18pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>对本机进行镜像文件检查</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>175</x>
+          <y>20</y>
+          <width>30</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="button.qrc">:/button/attn.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_25">
+       <widget class="QLabel" name="label_47">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>0</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>违规外联已检查完成</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="wailianBackButton">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>0</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="wailianTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>41</y>
+          <width>731</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>浏览器类型</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>URL</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>标题</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>访问时间</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>Internet Explorer</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>https://graph.qq.com/oauth2.0/authorize?viewPage=sgIME&amp;scope=get_user_info%2Cget_app_friends&amp;response_type=code&amp;show_auth_items=0&amp;redirect_uri=https%3A%2F%2Faccount.sogou.com%2Fconnect%2Fcallback%2Fqq%3Fclient_id%3D1044%26ip%3D218.94.29.59%26ru%3Dhttp%25253A%25252F%25252Faccount.sogou.com%25252F%25253Flogintype%25253Dqqsimple%26ts%3D1690581561%26type%3Dtoken%26user_agent%3Dsogou_ime&amp;state=  bfa94797-ada6-43e6-ba70-9f2312ac268b&amp;client_id=100294784</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>2017/12/21 14:18:35 </string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>2017/12/21 14:18:35 </string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>https://graph.qq.com/oauth2.0/authorize?viewPage=sgIME&amp;scope=get_user_info%2Cget_app_friends&amp;response_type=code&amp;show_auth_items=0&amp;redirect_uri=https%3A%2F%2Faccount.sogou.com%2Fconnect%2Fcallback%2Fqq%3Fclient_id%3D1044%26ip%3D218.94.29.59%26ru%3Dhttp%25253A%25252F%25252Faccount.sogou.com%25252F%25253Flogintype%25253Dqqsimple%26ts%3D2034649675%26type%3Dtoken%26user_agent%3Dsogou_ime&amp;state=c08b3bae-425f-4da2-864f-e57c4690f484&amp;client_id=100294784</string>
+         </property>
+        </item>
+        <item row="1" column="3">
+         <property name="text">
+          <string>2017/12/11 9:15:15</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_26">
+       <widget class="QLabel" name="label_48">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>0</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>文件操作痕迹已检查完成</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="wjczBackButton">
+        <property name="geometry">
+         <rect>
+          <x>410</x>
+          <y>0</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="wjczTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>41</y>
+          <width>731</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>检查模式</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>文件名</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>备注</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>conf.ini</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>c:/program/conf.ini</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>拷贝</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>2017/12/21 14:18:35 </string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_27">
+       <widget class="QLabel" name="label_49">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>0</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>文件内容已检查完成</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="wjnrBackButton">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>0</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="wjnrTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>41</y>
+          <width>731</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>序号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>文件路径</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>关键词</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_28">
+       <widget class="QLabel" name="label_50">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>0</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>移动介质使用已检查完成</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ydjzBackButton">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>0</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="ydjzTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>41</y>
+          <width>731</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>描述</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>设备类型</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>创建时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>修改时间</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>USB Root Hub</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>usbhub</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>2016/08/24 09:13:36</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>2017/12/08 09:27:40</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>USB Root Hub (xHCI)</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>USBHUB3</string>
+         </property>
+        </item>
+        <item row="1" column="2">
+         <property name="text">
+          <string>2016/08/24 09:13:55</string>
+         </property>
+        </item>
+        <item row="1" column="3">
+         <property name="text">
+          <string>2017/12/08 09:27:40</string>
+         </property>
+        </item>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page_29">
+       <widget class="QLabel" name="label_51">
+        <property name="geometry">
+         <rect>
+          <x>220</x>
+          <y>0</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;微软雅黑&quot;;
+color: rgb(0, 0, 0);</string>
+        </property>
+        <property name="text">
+         <string>镜像文件已检查完成</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="jxwjBackButton">
+        <property name="geometry">
+         <rect>
+          <x>380</x>
+          <y>0</y>
+          <width>71</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>返回</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="jxwjTableWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>41</y>
+          <width>731</width>
+          <height>361</height>
+         </rect>
+        </property>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>上网信息</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>文件操作</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>文件内容</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>移动介质使用</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>881</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(19, 57, 87);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="loadLabel">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>0</y>
+        <width>133</width>
+        <height>100</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(19, 57, 87);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="dengbaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>211</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(19, 57, 87);
+color: white;
+font: 20pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>正在审核...</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clshBackButton">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>30</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="dengbaoTableWidget">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>100</y>
+        <width>881</width>
+        <height>331</height>
+       </rect>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>检查项</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>检查结果描述</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>参考标准</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>操作系统的密码复杂度是否符合要求？</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>已禁用</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>启用复杂性要求</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>操作系统的密码长度最小值是否符合要求？</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>0个字符</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>8个字符以上</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>80</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="button.qrc">:/button/backup_seagate.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_19">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>84</y>
+        <width>421</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 18pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>审核操作系统安全策略，提供保护</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_20">
+      <property name="geometry">
+       <rect>
+        <x>343</x>
+        <y>130</y>
+        <width>371</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(154, 153, 153);
+font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>可检查操作系统重要安全配置是否合规，防患于未然</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="clshButton">
+      <property name="geometry">
+       <rect>
+        <x>342</x>
+        <y>200</y>
+        <width>161</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>开始检查</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="label_24">
+      <property name="geometry">
+       <rect>
+        <x>100</x>
+        <y>78</y>
+        <width>200</width>
+        <height>200</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="button.qrc">:/button/report256.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_25">
+      <property name="geometry">
+       <rect>
+        <x>329</x>
+        <y>78</y>
+        <width>441</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 75 18pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>生成安全报告，了解电脑安全详情</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_26">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>118</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(154, 153, 153);
+font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>可生成xml和html报告</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="htmlButton">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>200</y>
+        <width>121</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看报告</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="updateReportButton">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>200</y>
+        <width>121</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>上传报告</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_23">
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>50</y>
+        <width>881</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_27">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>10</y>
+        <width>461</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 10pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>本次体检结束， 共检查了以下项目：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_28">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>10</y>
+        <width>31</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="button.qrc">:/button/sign-check-icon.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="homeBackButton">
+      <property name="geometry">
+       <rect>
+        <x>740</x>
+        <y>10</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_23">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>92</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>系统补丁</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_29">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>124</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>已安装程序</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_52">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>156</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>硬件信息</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_53">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>188</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>共享目录</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_54">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>220</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>系统配置</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_55">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>252</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>违规外联</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_58">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>284</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>移动介质使用</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_59">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>316</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>合规检查</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>92</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>124</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>156</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_4">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>188</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_5">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>220</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_6">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>252</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_9">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>284</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_10">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>316</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="result_button_2">
+      <property name="geometry">
+       <rect>
+        <x>503</x>
+        <y>120</y>
+        <width>52</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="result_button_3">
+      <property name="geometry">
+       <rect>
+        <x>503</x>
+        <y>152</y>
+        <width>52</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="result_button_4">
+      <property name="geometry">
+       <rect>
+        <x>503</x>
+        <y>183</y>
+        <width>52</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="result_button_5">
+      <property name="geometry">
+       <rect>
+        <x>503</x>
+        <y>218</y>
+        <width>52</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="result_button_6">
+      <property name="geometry">
+       <rect>
+        <x>503</x>
+        <y>250</y>
+        <width>52</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="result_button_9">
+      <property name="geometry">
+       <rect>
+        <x>503</x>
+        <y>282</y>
+        <width>52</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="result_button_10">
+      <property name="geometry">
+       <rect>
+        <x>503</x>
+        <y>314</y>
+        <width>52</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="result_button_8">
+      <property name="geometry">
+       <rect>
+        <x>503</x>
+        <y>390</y>
+        <width>52</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>查看</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_8">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>392</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>111111</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_57">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>392</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>敏感信息</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_24">
+     <widget class="QLabel" name="label_31">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>30</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>检查报告预览</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="htmlBackButton">
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="outHtmlButton">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>30</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>导出报告</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_142">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>222</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>系统配置</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_143">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>158</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>硬件信息</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_144">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>94</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>系统补丁</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_20">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>158</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_145">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>126</y>
+        <width>71</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>已安装程序</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_21">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>322</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_146">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>190</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>共享目录</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_147">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>322</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>合规检查</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_22">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>290</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_23">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>254</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_149">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>254</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>违规外联</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_24">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>222</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_150">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>290</y>
+        <width>81</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>移动介质使用</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_25">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>94</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_26">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>190</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_27">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>126</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_148">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>390</y>
+        <width>54</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(49, 49, 49);
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string>敏感信息</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="resLabel_19">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>390</y>
+        <width>271</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #9ab1c1;
+font: 12px &quot;宋体&quot;;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_30">
+     <widget class="QLabel" name="label_56">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>30</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>程序安装情况</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="budingButton_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="chengxuTableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>881</width>
+        <height>356</height>
+       </rect>
+      </property>
+      <column>
+       <property name="text">
+        <string>名称</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>版本</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>安装时间</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>安装目录</string>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_31">
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>881</width>
+        <height>353</height>
+       </rect>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1000</width>
+         <height>1100</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>1000</width>
+         <height>1100</height>
+        </size>
+       </property>
+       <widget class="QLabel" name="label_60">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>CPU</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="yingjianTableWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>35</y>
+          <width>980</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>描述</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>序列号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>型号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>主频</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPU数</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>核数</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_61">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>160</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>硬盘</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="yingjianTableWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>185</y>
+          <width>980</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>描述</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>序列号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>大小</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>型号</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_62">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>310</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>主板</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="yingjianTableWidget_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>340</y>
+          <width>980</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>描述</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>序列号</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>型号</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_63">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>465</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>内存</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="yingjianTableWidget_11">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>490</y>
+          <width>980</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>总物理内存</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>可用物理内存</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>总虚拟内存</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>可用虚拟内存</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_64">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>615</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>显卡</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="yingjianTableWidget_12">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>640</y>
+          <width>980</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>驱动提供商</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>显存大小</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_65">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>765</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>声卡</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="yingjianTableWidget_13">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>790</y>
+          <width>980</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>驱动提供商</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QLabel" name="label_66">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>915</y>
+          <width>61</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(0, 0, 0);
+font: 12pt &quot;微软雅黑&quot;;</string>
+        </property>
+        <property name="text">
+         <string>网卡</string>
+        </property>
+       </widget>
+       <widget class="QTableWidget" name="yingjianTableWidget_14">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>940</y>
+          <width>980</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <column>
+         <property name="text">
+          <string>驱动提供商</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>描述</string>
+         </property>
+        </column>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="label_67">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>30</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>硬件情况</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="yingjianButton_2">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_32">
+     <widget class="QTableWidget" name="gongxiangTableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>881</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>共享名</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>共享路径</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>描述</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>ADMIN$</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>C:\WINDOWS</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>远程管理</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>C$</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>C:\</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>默认共享</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="muluButton_2">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_68">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>30</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>共享目录</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_33">
+     <widget class="QLabel" name="label_69">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>30</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>违规外联</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="wailianButton_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="wailianTableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>881</width>
+        <height>361</height>
+       </rect>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>浏览器类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>URL</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>标题</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>访问时间</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>Internet Explorer</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>https://graph.qq.com/oauth2.0/authorize?viewPage=sgIME&amp;scope=get_user_info%2Cget_app_friends&amp;response_type=code&amp;show_auth_items=0&amp;redirect_uri=https%3A%2F%2Faccount.sogou.com%2Fconnect%2Fcallback%2Fqq%3Fclient_id%3D1044%26ip%3D218.94.29.59%26ru%3Dhttp%25253A%25252F%25252Faccount.sogou.com%25252F%25253Flogintype%25253Dqqsimple%26ts%3D1690581561%26type%3Dtoken%26user_agent%3Dsogou_ime&amp;state=  bfa94797-ada6-43e6-ba70-9f2312ac268b&amp;client_id=100294784</string>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string>2017/12/21 14:18:35 </string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>2017/12/21 14:18:35 </string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>https://graph.qq.com/oauth2.0/authorize?viewPage=sgIME&amp;scope=get_user_info%2Cget_app_friends&amp;response_type=code&amp;show_auth_items=0&amp;redirect_uri=https%3A%2F%2Faccount.sogou.com%2Fconnect%2Fcallback%2Fqq%3Fclient_id%3D1044%26ip%3D218.94.29.59%26ru%3Dhttp%25253A%25252F%25252Faccount.sogou.com%25252F%25253Flogintype%25253Dqqsimple%26ts%3D2034649675%26type%3Dtoken%26user_agent%3Dsogou_ime&amp;state=c08b3bae-425f-4da2-864f-e57c4690f484&amp;client_id=100294784</string>
+       </property>
+      </item>
+      <item row="1" column="3">
+       <property name="text">
+        <string>2017/12/11 9:15:15</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_34">
+     <widget class="QLabel" name="label_70">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>30</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>移动介质</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ydjzButton_2">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="ydjzTableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>881</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>描述</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>设备类型</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>创建时间</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>修改时间</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>USB Root Hub</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>usbhub</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>2016/08/24 09:13:36</string>
+       </property>
+      </item>
+      <item row="0" column="3">
+       <property name="text">
+        <string>2017/12/08 09:27:40</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>USB Root Hub (xHCI)</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>USBHUB3</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>2016/08/24 09:13:55</string>
+       </property>
+      </item>
+      <item row="1" column="3">
+       <property name="text">
+        <string>2017/12/08 09:27:40</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_35">
+     <widget class="QPushButton" name="ydjzButton_3">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>30</y>
+        <width>81</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>返回</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_71">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>30</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 16pt &quot;微软雅黑&quot;;</string>
+      </property>
+      <property name="text">
+       <string>合规检查</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="dengbaoTableWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>90</y>
+        <width>881</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>检查项</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>检查结果描述</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>参考标准</string>
+       </property>
+      </column>
+      <item row="0" column="0">
+       <property name="text">
+        <string>操作系统的密码复杂度是否符合要求？</string>
+       </property>
+      </item>
+      <item row="0" column="1">
+       <property name="text">
+        <string>已禁用</string>
+       </property>
+      </item>
+      <item row="0" column="2">
+       <property name="text">
+        <string>启用复杂性要求</string>
+       </property>
+      </item>
+      <item row="1" column="0">
+       <property name="text">
+        <string>操作系统的密码长度最小值是否符合要求？</string>
+       </property>
+      </item>
+      <item row="1" column="1">
+       <property name="text">
+        <string>0个字符</string>
+       </property>
+      </item>
+      <item row="1" column="2">
+       <property name="text">
+        <string>8个字符以上</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="mainToolButton">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>35</y>
+      <width>51</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>首页</string>
+    </property>
+    <property name="icon">
+     <iconset resource="button.qrc">
+      <normaloff>:/button/1b.png</normaloff>:/button/1b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="popupMode">
+     <enum>QToolButton::DelayedPopup</enum>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+    <property name="autoRaise">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="sysToolButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>35</y>
+      <width>51</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>系统信息</string>
+    </property>
+    <property name="icon">
+     <iconset resource="button.qrc">
+      <normaloff>:/button/5b.png</normaloff>:/button/5b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="docuToolButton">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>35</y>
+      <width>51</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>痕迹扫描</string>
+    </property>
+    <property name="icon">
+     <iconset resource="button.qrc">
+      <normaloff>:/button/4b.png</normaloff>:/button/4b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="ployToolButton">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>35</y>
+      <width>51</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>合规检查</string>
+    </property>
+    <property name="icon">
+     <iconset resource="button.qrc">
+      <normaloff>:/button/2b.png</normaloff>:/button/2b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="funcToolButton">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>35</y>
+      <width>51</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>检查报告</string>
+    </property>
+    <property name="icon">
+     <iconset resource="button.qrc">
+      <normaloff>:/button/6b.png</normaloff>:/button/6b.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>32</width>
+      <height>32</height>
+     </size>
+    </property>
+    <property name="checkable">
+     <bool>true</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>881</width>
+      <height>4</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #4d81b1;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>880</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="sizeGripEnabled">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>RingsMapProgressbar</class>
+   <extends>QWidget</extends>
+   <header>ringsmapprogressbar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="button.qrc"/>
+ </resources>
+ <connections/>
+</ui>

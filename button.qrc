@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/">
+        <file>button/1.png</file>
+        <file>button/2.png</file>
+        <file>button/3.png</file>
+        <file>button/4.png</file>
+        <file>button/5.png</file>
+        <file>button/6.png</file>
+        <file>button/zoom.png</file>
+        <file>button/earthscan.png</file>
+        <file>button/attn.png</file>
+        <file>button/book_search.png</file>
+        <file>button/search_computer.png</file>
+        <file>button/search_globe.png</file>
+        <file>button/search_page.png</file>
+        <file>button/zip_file_search.png</file>
+        <file>button/backup_seagate.png</file>
+        <file>button/load.gif</file>
+        <file>button/load2.gif</file>
+        <file>button/security.png</file>
+        <file>button/shield.png</file>
+        <file>button/report256.png</file>
+        <file>button/alert1.png</file>
+        <file>button/sign-check-icon.png</file>
+        <file>button/arrow_triangle-down_alt.png</file>
+        <file>button/icon_close_alt.png</file>
+        <file>button/058.png</file>
+        <file>button/060.png</file>
+        <file>button/close.png</file>
+        <file>button/subtract.png</file>
+        <file>button/ie.png</file>
+        <file>button/Internet.png</file>
+        <file>button/network_1.png</file>
+        <file>button/1b.png</file>
+        <file>button/2b.png</file>
+        <file>button/3b.png</file>
+        <file>button/4b.png</file>
+        <file>button/5b.png</file>
+        <file>button/6b.png</file>
+        <file>button/clipboard.png</file>
+        <file>button/wait.gif</file>
+    </qresource>
+</RCC>

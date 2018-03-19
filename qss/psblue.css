@@ -1,0 +1,67 @@
+
+.QPushButton{
+border-style:none;
+border:1px solid #BFC2C5;
+color:#000000;
+padding:5px;
+min-height:15px;
+border-radius:10px;
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #FAFAF9,stop:1 #F1F1F1);
+}
+
+.QToolButton{
+border:none;
+background-color:#BADBFC;
+color:#000000;
+border-radius:7px;
+}
+
+.QPushButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #F1F1F1,stop:1 #DCDCDC);
+}
+
+.QToolButton:hover{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #F9FCFF,stop:1 #C0DEFC);
+}
+
+.QPushButton:pressed{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #F1F1F1,stop:1 #DCDCDC);
+}
+
+.QToolButton:pressed{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #F9FCFF,stop:1 #C0DEFC);
+}
+
+.QToolButton:checked{
+background:qlineargradient(spread:pad,x1:0,y1:0,x2:0,y2:1,stop:0 #F9FCFF,stop:1 #C0DEFC);	
+}
+
+.QToolButton::menu-indicator{
+image:None;
+}
+
+QToolButton#btnMenu,QPushButton#btnMenu_Min,QPushButton#btnMenu_Max,QPushButton#btnMenu_Close{
+border-radius:3px;
+color:#DCDCDC;
+padding:3px;
+margin:0px;
+background:none;
+border-style:none;
+}
+
+QToolButton#btnMenu:hover,QPushButton#btnMenu_Min:hover,QPushButton#btnMenu_Max:hover{
+color:#FFFFFF;
+margin:1px 1px 2px 1px;
+background-color:rgba(51,127,209,230);
+}
+
+QPushButton#btnMenu_Close:hover{
+color:#FFFFFF;
+margin:1px 1px 2px 1px;
+background-color:rgba(238,0,0,128);
+}
+
+*:disabled{
+background:#87CEEB;
+border-color:#BADBFC;
+}
